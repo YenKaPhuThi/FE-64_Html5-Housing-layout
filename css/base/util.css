@@ -1,0 +1,477 @@
+/* Begin Heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 5.6rem;
+  line-height: 6.1rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+  line-height: 4.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 3.3rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+}
+
+h5 {
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+/* End Heading */
+
+/* Begin Paragraph */
+p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+/* End Paragraph */
+
+/* Begin Container */
+.container {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 117rem;
+}
+
+.container.container--fluid {
+  max-width: 100%;
+}
+
+.section {
+  padding: 7rem 0;
+}
+/* End Container */
+
+/* Begin Display Flex */
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+/* End Display Flex */
+
+/* Begin Row and Col */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.col-3,
+.col-4,
+.col-6,
+.col-8,
+.col-12 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.col-3 {
+  width: calc(100% / 4);
+}
+
+.col-4 {
+  width: calc(100% / 3);
+}
+
+.col-6 {
+  width: calc(100% / 2);
+}
+
+.col-8 {
+  width: 75%;
+}
+
+.col-12 {
+  width: 100%;
+}
+/* End Row and Col */
+
+/* Begin Column Span Grid */
+.col-1-span-2 {
+  grid-column: 1 / span 2 !important;
+}
+
+.col-2-span-2 {
+  grid-column: 2 / span 2;
+}
+
+.col-3-span-2 {
+  grid-column: 3 / span 2 !important;
+}
+
+/* End Column Span Grid */
+
+/* Begin Letter Spacing */
+.letter-spacing-2 {
+  letter-spacing: 0.2rem !important;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 0.3rem !important;
+}
+
+.letter-spacing-5 {
+  letter-spacing: 0.5rem !important;
+}
+/* End Letter Spacing */
+
+/* Begin Text Alignment */
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+/* End Text Alignment */
+
+/* Begin Text Color */
+.text-primary {
+  color: #00cdce !important;
+}
+
+.text-secondary {
+  color: #7f7777 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+/* End Text Color */
+
+/* Begin Text Transform */
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+/* End Text Transform */
+
+/* Begin Font Size */
+.fs-12 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.fs-24 {
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+}
+
+.fs-56 {
+  font-size: 5.6rem;
+  line-height: 8rem;
+}
+/* End Font Size */
+
+/* Begin Font Weight */
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-900 {
+  font-weight: 900 !important;
+}
+
+strong {
+  font-weight: 600;
+}
+/* End Font Weight */
+
+/* Begin Background Color */
+.bg-primary {
+  background-color: #00cdce !important;
+}
+
+.bg-secondary {
+  background-color: #7f7777 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+/* End Background Color */
+
+/* Begin Button */
+.btn {
+  cursor: pointer;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+
+  border: 0.1rem solid #000;
+
+  padding: 0.8rem 1.8rem;
+  min-width: 10rem;
+
+  transition: all 0.5s;
+}
+
+.btn.btn--xs {
+  padding: 0.6rem 1.6rem;
+}
+
+.btn.btn--primary {
+  color: #00cdce;
+  background-color: #000;
+}
+
+.btn.btn--primary:hover {
+  color: #fff;
+}
+
+.btn.btn--secondary {
+  color: #fff;
+  background-color: #000;
+  padding: 1rem 1.8rem;
+}
+
+.btn.btn--secondary:hover {
+  color: #000;
+  background: #00cdce;
+  border-color: #00cdce;
+}
+
+.btn.btn--revert {
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+
+  background-color: #000;
+
+  padding: 0.7rem 5rem;
+}
+
+.btn.btn--revert:hover {
+  color: #000;
+  background-color: #dfdfdf;
+}
+/* End Button */
+
+/* Begin Input and Textarea */
+.form-control {
+  color: #000;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  border: 0;
+  padding: 1.5rem;
+  margin-top: 2.8rem;
+  width: 100%;
+}
+
+.form-control.topless {
+  margin-top: 0;
+}
+
+.form-control.form-control--with-bg {
+  background: rgb(239, 239, 239);
+  border-bottom: solid 0.2rem #999;
+
+  padding: 1.1rem 1.4rem;
+}
+
+.form-control.form-control--with-bg:hover,
+.form-control.form-control--with-bg:focus {
+  border-color: #000;
+}
+
+textarea.form-control {
+  min-height: 18.6rem;
+}
+/* End Input */
+
+/* Begin Icon */
+i.s-14 {
+  font-size: 1.4rem;
+}
+
+i.s-21 {
+  font-size: 2.1rem;
+}
+
+i.s-28 {
+  font-size: 2.8rem;
+}
+
+i.s-25 {
+  font-size: 2.5rem !important;
+}
+
+i.s-35 {
+  font-size: 3.5rem !important;
+}
+
+i.s-disc {
+  cursor: pointer;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+i.text-black.s-disc {
+  border: 0.1rem solid #7f7777;
+}
+
+i.text-black.s-disc:hover {
+  color: #fff;
+  background: #00cdce;
+}
+
+i.s-square {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+i.text-white.s-square {
+  border: 0.2rem solid #fff;
+}
+
+i.text-white.s-square:hover {
+  background-color: #3b5998;
+}
+/* End Icon */
+
+/* Begin Width */
+.w-per-100 {
+  width: 100%;
+}
+/* End Width */
+
+/* Begin Margin and Padding */
+.mt-5 {
+  margin-top: 0.5rem !important;
+}
+
+.mt-10 {
+  margin-top: 1rem !important;
+}
+
+.mt-12 {
+  margin-top: 1.6rem;
+}
+
+.mt-14 {
+  margin-top: 1.4rem;
+}
+
+.mt-18 {
+  margin-top: 1.8rem;
+}
+
+.mb-16 {
+  margin-bottom: 1.6rem;
+}
+
+.mb-21 {
+  margin-bottom: 2.1rem;
+}
+
+.ml-16 {
+  margin-left: 1.6rem;
+}
+
+.mr-20 {
+  margin-right: 2rem;
+}
+
+.mt-24 {
+  margin-top: 2.4rem;
+}
+
+.my-24 {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.mt-28 {
+  margin-top: 2.8rem;
+}
+
+.mt-48 {
+  margin-top: 4.8rem;
+}
+
+.mb-44 {
+  margin-bottom: 4.4rem !important;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+/* End Width and Height */
+
+/* Begin Link */
+a.link {
+  color: #fff;
+}
+
+a.link.link--primary {
+  color: #00cdce;
+}
+
+a.link.link--primary:hover {
+  color: #000;
+}
+
+a.link.link--secondary {
+  color: #000;
+}
+
+a.link.link--secondary:hover {
+  color: #2cbeff;
+}
+
+a.link.link--red {
+  color: red;
+}
+
+a.link.link--red:hover {
+  color: #fff;
+}
+/* End Link */
