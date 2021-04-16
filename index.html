@@ -18,6 +18,8 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <!-- Jquery Modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <!-- Reponsive Slides -->
     <link
       rel="stylesheet"
@@ -30,8 +32,10 @@
     <!-- Base Css -->
     <link rel="stylesheet" href="./css/base/reset.css" />
     <link rel="stylesheet" href="./css/base/util.css" />
+    <link rel="stylesheet" href="./css/module/modal.css">
     <link rel="stylesheet" href="./css/layout/style.css" />
   </head>
+
   <body>
     <div class="wrapper">
       <header class="header">
@@ -222,9 +226,7 @@
                     At vero eos et accusamus et iusto odio dignissimos ducimus
                     qui blanditiis praesentium
                   </p>
-                  <button type="button" class="btn btn--primary mt-14">
-                    Read more..
-                  </button>
+                  <a href="#readMoreModal" class="btn btn--primary mt-14" rel="modal:open">Read more..</a>
                 </div>
               </div>
             </div>
@@ -241,9 +243,7 @@
                     At vero eos et accusamus et iusto odio dignissimos ducimus
                     qui blanditiis praesentium
                   </p>
-                  <button type="button" class="btn btn--primary mt-14">
-                    Read more..
-                  </button>
+                  <a href="#readMoreModal" class="btn btn--primary mt-14" rel="modal:open">Read more..</a>
                 </div>
               </div>
             </div>
@@ -260,9 +260,7 @@
                     At vero eos et accusamus et iusto odio dignissimos ducimus
                     qui blanditiis praesentium
                   </p>
-                  <button type="button" class="btn btn--primary mt-14">
-                    Read more..
-                  </button>
+                  <a href="#readMoreModal" class="btn btn--primary mt-14" rel="modal:open">Read more..</a>
                 </div>
               </div>
             </div>
@@ -289,9 +287,7 @@
             laboris nisi esse quam nihil molestiae consequatur, vel illum qui
             dolorem eum fugiat quo voluptas nulla pariatur.
           </p>
-          <button type="button" class="btn btn--primary mt-28">
-            Read more..
-          </button>
+          <a href="#readMoreModal" class="btn btn--primary mt-14" rel="modal:open">Read more..</a>
         </div>
       </section>
       <section id="portfolio" class="portfolio section">
@@ -312,8 +308,8 @@
                         Lorem Ipsum is simply dummy
                       </p>
                     </div>
-                  </div></a
-                >
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-4">
@@ -330,8 +326,8 @@
                         Lorem Ipsum is simply dummy
                       </p>
                     </div>
-                  </div></a
-                >
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-4">
@@ -348,8 +344,8 @@
                         Lorem Ipsum is simply dummy
                       </p>
                     </div>
-                  </div></a
-                >
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-4">
@@ -366,8 +362,8 @@
                         Lorem Ipsum is simply dummy
                       </p>
                     </div>
-                  </div></a
-                >
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-4">
@@ -384,8 +380,8 @@
                         Lorem Ipsum is simply dummy
                       </p>
                     </div>
-                  </div></a
-                >
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-4">
@@ -402,8 +398,8 @@
                         Lorem Ipsum is simply dummy
                       </p>
                     </div>
-                  </div></a
-                >
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -446,17 +442,17 @@
                 <h4 class="text-uppercase text-primary">KAT WALLY</h4>
                 <p class="fs-12 text-white mt-5">Lorem Ipsum</p>
                 <ul class="d-flex justify-content-center mt-14">
-                  <li class="mr-20">
+                  <li class="ml-20">
                     <a href="#">
                       <i class="fab fa-facebook-f text-white s-14 s-square"></i>
                     </a>
                   </li>
-                  <li class="mr-20">
+                  <li class="ml-20">
                     <a href="#">
                       <i class="fab fa-twitter text-white s-14 s-square"></i>
                     </a>
                   </li>
-                  <li class="mr-20">
+                  <li class="ml-20">
                     <a href="#">
                       <i class="fa fa-rss text-white s-14 s-square"></i>
                     </a>
@@ -470,17 +466,17 @@
                 <h4 class="text-uppercase text-primary">JOHN MAX</h4>
                 <p class="fs-12 text-white mt-5">Lorem Ipsum</p>
                 <ul class="d-flex justify-content-center mt-14">
-                  <li class="mr-20">
+                  <li class="ml-20">
                     <a href="#">
                       <i class="fab fa-facebook-f text-white s-14 s-square"></i>
                     </a>
                   </li>
-                  <li class="mr-20">
+                  <li class="ml-20">
                     <a href="#">
                       <i class="fab fa-twitter text-white s-14 s-square"></i>
                     </a>
                   </li>
-                  <li class="mr-20">
+                  <li class="ml-20">
                     <a href="#">
                       <i class="fa fa-rss text-white s-14 s-square"></i>
                     </a>
@@ -494,17 +490,17 @@
                 <h4 class="text-uppercase text-primary">ROY KENT</h4>
                 <p class="fs-12 text-white mt-5">Lorem Ipsum</p>
                 <ul class="d-flex justify-content-center mt-14">
-                  <li class="mr-20">
+                  <li class="ml-20">
                     <a href="#">
                       <i class="fab fa-facebook-f text-white s-14 s-square"></i>
                     </a>
                   </li>
-                  <li class="mr-20">
+                  <li class="ml-20">
                     <a href="#">
                       <i class="fab fa-twitter text-white s-14 s-square"></i>
                     </a>
                   </li>
-                  <li class="mr-20">
+                  <li class="ml-20">
                     <a href="#">
                       <i class="fa fa-rss text-white s-14 s-square"></i>
                     </a>
@@ -518,17 +514,17 @@
                 <h4 class="text-uppercase text-primary">JOY IDSON</h4>
                 <p class="fs-12 text-white mt-5">Lorem Ipsum</p>
                 <ul class="d-flex justify-content-center mt-14">
-                  <li class="mr-20">
+                  <li class="ml-20">
                     <a href="#">
                       <i class="fab fa-facebook-f text-white s-14 s-square"></i>
                     </a>
                   </li>
-                  <li class="mr-20">
+                  <li class="ml-20">
                     <a href="#">
                       <i class="fab fa-twitter text-white s-14 s-square"></i>
                     </a>
                   </li>
-                  <li class="mr-20">
+                  <li class="ml-20">
                     <a href="#">
                       <i class="fa fa-rss text-white s-14 s-square"></i>
                     </a>
@@ -598,7 +594,7 @@
         </div>
       </section>
       <footer class="footer bg-primary">
-        <div class="container">
+        <div class="container container--sm">
           <div class="d-flex align-items-center">
             <p class="text-white">
               © 2017 Housing. All Rights Reserved | Design by
@@ -610,24 +606,32 @@
               >
             </p>
             <ul class="d-flex justify-content-center ml-auto">
-              <li class="mr-20">
+              <li class="ml-20">
                 <a href="#">
-                  <i class="fab fa-facebook-f text-white s-14 s-square"></i>
+                  <i
+                    class="fab fa-facebook-f text-white s-19 s-square s-square--slim"
+                  ></i>
                 </a>
               </li>
-              <li class="mr-20">
+              <li class="ml-20">
                 <a href="#">
-                  <i class="fab fa-twitter text-white s-14 s-square"></i>
+                  <i
+                    class="fab fa-twitter text-white s-19 s-square s-square--slim"
+                  ></i>
                 </a>
               </li>
-              <li class="mr-20">
+              <li class="ml-20">
                 <a href="#">
-                  <i class="fa fa-rss text-white s-14 s-square"></i>
+                  <i
+                    class="fa fa-rss text-white s-19 s-square s-square--slim"
+                  ></i>
                 </a>
               </li>
-              <li class="mr-20">
+              <li class="ml-20">
                 <a href="#">
-                  <i class="fab fa-vk text-white s-14 s-square"></i>
+                  <i
+                    class="fab fa-vk text-white s-19 s-square s-square--slim"
+                  ></i>
                 </a>
               </li>
             </ul>
@@ -635,11 +639,15 @@
         </div>
       </footer>
     </div>
-    <div class="back-to-top">
-      <a href="#" class="cd-top text-replace js-cd-top">
-        <i class="far fa-arrow-alt-circle-up"></i>
-      </a>
+    <div id="readMoreModal" class="modal">
+      <a href="#readMoreModal" rel="modal:close" class="close-modal icon-remove">x</a>
+      <div class="modal-header">Housing</div>
+      <div class="modal-body">
+        <img src="./images/img2.jpg" alt="Blog modal img">
+        <p class="text-grey p-30">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+      </div>
     </div>
+    <a href="#" class="back-to-top cd-top text-replace js-cd-top"></a>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script
@@ -647,6 +655,8 @@
       integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
       crossorigin="anonymous"
     ></script>
+    <!-- Jquery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <!-- Back To Top -->
     <script src="./libs/back-to-top/js/util.js"></script>
     <script src="./libs/back-to-top/js/main.js"></script>

@@ -79,7 +79,6 @@
 .carousel .callbacks_nav {
   position: absolute;
   top: 50%;
-  margin-top: -2.5rem;
 
   height: 4.5rem;
   width: 5rem;
@@ -172,7 +171,7 @@
   background-position: center center;
   background-size: cover;
   background-clip: border-box;
-  height: 38.3rem;
+  height: auto;
 
   display: flex;
   align-items: center;
@@ -291,33 +290,31 @@
 
 /* Begin Footer */
 .footer {
-  padding: 2.8rem;
+  padding: 3.8rem 0;
 }
 /* End Footer */
 
 /* Begin Back To Top */
 .back-to-top {
+  background: url("../../images/arrowup.png") no-repeat center center;
+  height: 3.2rem;
+  width: 3.2rem;
+
   position: fixed;
-  bottom: 2.4rem;
-  right: 2.4rem;
+  bottom: 4.8rem;
+  right: 4.8rem;
 }
 
-.back-to-top a {
+.back-to-top {
   opacity: 0;
 }
 
-.back-to-top i {
-  color: #15a9b9;
-  font-size: 4rem;
-  line-height: 4rem;
-}
-
-.back-to-top .cd-top--is-visible {
+.back-to-top.cd-top--is-visible {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.5;
 }
 
-.back-to-top .cd-top--fade-out {
-  opacity: 0.5;
+.back-to-top.cd-top--fade-out {
+  opacity: 1;
 }
 /* End Back To Top */
